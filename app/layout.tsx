@@ -1,3 +1,6 @@
+import '@/app/ui/global.css';
+import { inter } from './ui/fonts';
+
 export default function RootLayout({
   children,
 }: {
@@ -5,7 +8,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body
+        className={`${inter.className} antialiased`}
+        data-new-gr-c-s-check-loaded="14.1146.0"
+        data-gr-ext-installed=""
+      >
+        {children}
+      </body>
     </html>
   );
 }
